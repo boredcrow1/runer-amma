@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <div class="bg-[#ff8d8d] h-screen">
+            <button class="fixed top-3 right-6" id="show">
+                <i class="material-icons text-5xl">live_help</i>
+            </button>
+      </div>
+      <div class="fixed top-0 right-0 h-screen bg-[#a9d1f7] w-full resize-x lg:w-5/12 p-6 overflow-y-auto" id="ai">
+        <button class="fixed right-6 top-3" id="close">
+            <i class="material-icons">close</i>
+        </button>
+        <ul class="mt-5 mb-20" id="list">
+        </ul>
+          <form class="fixed bottom-0 flex lg:w-5/12 w-full mb-5">
+              <div class="basis-9/12 mx-3 flex justify-center items-center">
+                <input class="w-full py-2 px-1" id="prompt">
+              </div>
+              <div class="basis-3/12">
+                <button id="demo" type="submit"
+                class="bg-[#06be7a] basis-1/3 text-lg font-semibold text-white px-4 py-2 rounded-lg mr-2">Submit</button>
+              </div>
+          </form>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
